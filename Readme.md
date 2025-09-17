@@ -19,7 +19,6 @@ Personal-Expense-Tracker-Python/
 
 ### Prerequisites
 - Python 3.x
--
 
 ### Installation
 1. Clone the repository:
