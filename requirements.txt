@@ -1,0 +1,7 @@
+mysql-connector-python
+bcrypt
+tkinter
+ttkbootstrap
+pandas
+matplotlib
+pyinstaller

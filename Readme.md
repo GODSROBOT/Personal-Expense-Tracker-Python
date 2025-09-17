@@ -4,8 +4,6 @@ A simple Python-based personal expense tracker that helps you manage and track y
 
 ## Features
 - Add new expenses with details (amount, category, date, description)
-- View all expenses
-- Filter expenses by date or category
 - Simple and easy-to-use CLI
 - Data stored locally using SQLite
 
@@ -21,6 +19,7 @@ Personal-Expense-Tracker-Python/
 
 ### Prerequisites
 - Python 3.x
+-
 
 ### Installation
 1. Clone the repository:
@@ -49,6 +48,35 @@ Run the main application:
 python main.py
 ```
 Follow the on-screen prompts to add, view, or filter your expenses.
+
+### Build as Windows Executable (.exe)
+If you want to create a standalone Windows executable (.exe) for this app, use [PyInstaller](https://pyinstaller.org/):
+
+#### Step-by-step: How to convert this Python app to .exe
+1. Open a terminal or command prompt in the project directory.
+2. (Optional but recommended) Activate your virtual environment if you have one:
+   ```sh
+   .\venv\Scripts\activate
+   ```
+3. Make sure all dependencies are installed:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Install PyInstaller if not already installed:
+   ```sh
+   pip install pyinstaller
+   ```
+5. Run PyInstaller to build the executable:
+   ```sh
+   pyinstaller --onefile --windowed main.py
+   ```
+   - The `--onefile` flag bundles everything into a single .exe file.
+   - The `--windowed` flag prevents a console window from appearing (for GUI apps).
+6. After the process completes, find your `.exe` file in the `dist` folder:
+   ```
+   dist\main.exe
+   ```
+7. You can now copy or share this `.exe` file. It will run on any Windows machine without needing Python installed.
 
 ## License
 This project is licensed under the MIT License.
